@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 New Message
+    form(action='/new' , method='POST')
+        h3 Name:
+        input(id='messageUser',name='messageUser')
+        h3 Message: 
+        input(id='messageText',name='messageText')
+        br
+        br
+        input(type='submit')
